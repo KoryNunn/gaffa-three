@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "name":"gaffa-three-demo",
+  "description": "My gaffa app",
+  "main": "app.js",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {
+    "gaffa": "0.14.x"
+  },
+  "dev-dependencies": {
+    "browserifyer": ">=0.0.0"
+  }
+}
