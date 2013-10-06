@@ -12,6 +12,7 @@ function Animator(scene, camera){
     this.camera = camera;
 
     this.renderer = new THREE.WebGLRenderer();
+    this.animator = animator;
 
     var renderLoop = function(){
         animator.render();
@@ -50,6 +51,7 @@ Scene.prototype.render = function(){
 
     this.renderedElement = renderedElement;
     this.camera = camera;
+    this.animator = animator;
     this.light = directionalLight;
 
     this.views.content.element = threeScene;
@@ -66,7 +68,6 @@ Scene.prototype.cameraPositionY = new ZeroProperty(function(viewModel, value){
 Scene.prototype.cameraPositionZ = new ZeroProperty(function(viewModel, value){
     viewModel.camera.position.z = value;
 });
-
 Scene.prototype.lightPositionX = new ZeroProperty(function(viewModel, value){
     viewModel.light.position.x = value;
 });

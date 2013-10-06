@@ -8,9 +8,6 @@
         "3d"
     ],
     "description": "Three.js views for gaffa",
-    "dependencies": {
-        "gaffa": "0.14.x"
-    },
     "repository": {
         "type": "git",
         "url": "git://github.com/KoryNunn/gaffa-three.git"

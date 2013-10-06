@@ -2,6 +2,7 @@
 
 var THREE = require('three'),
     Gaffa = require('gaffa'),
+    Scene = require('./scene'),
     ZeroProperty = require('../zeroProperty');
 
 function ThreeObject(){}
@@ -21,8 +22,18 @@ ThreeObject.prototype.title = null;
 ThreeObject.prototype.enabled = null;
 ThreeObject.prototype.classes = null;
 
-ThreeObject.prototype.insertFunction = function(scene, renderedElement){
-    scene.add(renderedElement);
+ThreeObject.prototype.getScene = function(){
+    var parent = this;
+
+    while(parent && !(parent instanceof Scene)){
+        parent = parent.parent;
+    }
+
+    return parent;
+};
+
+ThreeObject.prototype.insertFunction = function(parentObject, renderedElement){
+    parentObject.add(renderedElement);
 };
 ThreeObject.prototype.positionX = new ZeroProperty(function(viewModel, value){
     viewModel.renderedElement.position.x = value;
