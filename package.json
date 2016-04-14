@@ -1,18 +1,25 @@
 {
-    "version": "0.0.1",
-    "name":"gaffa-three",
-    "author": "Kory Nunn <knunn187@gmail.com>",
-    "tags": [
-        "three",
-        "gaffa",
-        "3d"
-    ],
-    "description": "Three.js views for gaffa",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/KoryNunn/gaffa-three.git"
-    },
-    "bugs": {
-        "url": "http://github.com/KoryNunn/gaffa-three/issues"
-    }
+  "version": "0.0.1",
+  "name": "gaffa-three",
+  "author": "Kory Nunn <knunn187@gmail.com>",
+  "tags": [
+    "three",
+    "gaffa",
+    "3d"
+  ],
+  "description": "Three.js views for gaffa",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/KoryNunn/gaffa-three.git"
+  },
+  "bugs": {
+    "url": "http://github.com/KoryNunn/gaffa-three/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/gaffa-three#readme",
+  "main": "zeroProperty.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC"
 }
